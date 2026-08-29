@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">From false completion to evidence-backed completion</title>
+  <desc id="desc">A before-and-after system diagram showing an invalid candidate rejected, retried at one node, and verified through readback.</desc>
+  <rect width="1600" height="520" fill="#eee9dc"/>
+  <g font-family="Consolas, monospace">
+    <text x="70" y="64" fill="#8b3a24" font-size="16" letter-spacing="3">INCIDENT 231 / SYSTEM CHANGE</text>
+    <g transform="translate(70 105)">
+      <rect width="560" height="330" fill="#e1dbc9" stroke="#111410"/>
+      <text x="24" y="38" fill="#6d3021" font-size="14">BEFORE / FALSE COMPLETION</text>
+      <rect x="24" y="64" width="512" height="176" fill="#aca79d" stroke="#585a54"/>
+      <path d="M24 180l130-82 115 66 105-62 162 92" fill="none" stroke="#777a72" stroke-width="3"/>
+      <text x="280" y="155" fill="#585a54" font-family="Baskerville, serif" font-size="28" text-anchor="middle">visually plausible</text>
+      <rect x="310" y="210" width="226" height="30" fill="#9d321f"/>
+      <text x="423" y="231" fill="#eee9dc" font-size="12" text-anchor="middle">REQUIRED OBJECT: ABSENT</text>
+      <text x="24" y="282" fill="#454841" font-size="15">Image exists → job marked complete</text>
+      <text x="24" y="312" fill="#777a72" font-size="13">Intermediate state was implicit.</text>
+    </g>
+    <g transform="translate(690 210)" text-anchor="middle">
+      <text x="110" y="0" fill="#8b3a24" font-size="13">ROOT CAUSE</text>
+      <text x="110" y="31" fill="#111410" font-family="Baskerville, serif" font-size="24">Asset states</text>
+      <text x="110" y="58" fill="#111410" font-family="Baskerville, serif" font-size="24">were implicit</text>
+      <text x="110" y="112" fill="#8b3a24" font-size="46">→</text>
+    </g>
+    <g transform="translate(970 105)">
+      <rect width="560" height="330" fill="#e1dbc9" stroke="#111410"/>
+      <text x="24" y="38" fill="#264b28" font-size="14">AFTER / EVIDENCE-BACKED</text>
+      <rect x="24" y="64" width="512" height="176" fill="#aab39b" stroke="#585a54"/>
+      <path d="M24 180l130-82 115 66 105-62 162 92" fill="none" stroke="#697061" stroke-width="3"/>
+      <path d="M387 188v-72h15V95h18v21h15v72z" fill="#b8f36a" stroke="#111410" stroke-width="3"/>
+      <text x="240" y="155" fill="#3c4735" font-family="Baskerville, serif" font-size="28" text-anchor="middle">contract satisfied</text>
+      <rect x="328" y="210" width="208" height="30" fill="#264b28"/>
+      <text x="432" y="231" fill="#eee9dc" font-size="12" text-anchor="middle">READBACK: VERIFIED</text>
+      <text x="24" y="282" fill="#454841" font-size="15">Gate → scoped retry → downstream proof</text>
+      <text x="24" y="312" fill="#777a72" font-size="13">Every state has a separate contract.</text>
+    </g>
+  </g>
+</svg>

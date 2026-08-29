@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Molly evidence-first multimodal agent case study</title>
+  <desc id="desc">A dark industrial control panel showing a failed multimodal candidate blocked, retried, and verified.</desc>
+  <rect width="1600" height="760" fill="#111410"/>
+  <g opacity=".13" stroke="#eee9dc"><path d="M0 190h1600M0 380h1600M0 570h1600"/><path d="M400 0v760M800 0v760M1200 0v760"/></g>
+  <text x="88" y="98" fill="#b8f36a" font-family="Consolas, monospace" font-size="20" letter-spacing="4">PRODUCTION CASE STUDY / 2025—2026</text>
+  <text x="88" y="212" fill="#eee9dc" font-family="Baskerville, serif" font-size="83">Evidence-first</text>
+  <text x="88" y="300" fill="#f36b3d" font-family="Baskerville, serif" font-size="83">multimodal operations.</text>
+  <text x="92" y="360" fill="#b8b3a8" font-family="Consolas, monospace" font-size="20">FAIL VISIBLY / RECOVER LOCALLY / LEAVE EVIDENCE</text>
+  <g transform="translate(88 438)">
+    <rect width="1424" height="218" fill="#0b0e0a" stroke="#557036"/>
+    <text x="28" y="38" fill="#8a8f81" font-family="Consolas, monospace" font-size="14">SANITIZED RUN / CASE-231</text>
+    <g transform="translate(28 75)" font-family="Consolas, monospace">
+      <g><circle cx="22" cy="22" r="21" fill="none" stroke="#b8f36a"/><text x="15" y="27" fill="#b8f36a" font-size="13">01</text><text x="58" y="17" fill="#eee9dc" font-size="17">EVIDENCE SEALED</text><text x="58" y="41" fill="#777d70" font-size="13">source + task boundary</text></g>
+      <path d="M290 22h70" stroke="#3d433a"/>
+      <g transform="translate(370)"><circle cx="22" cy="22" r="21" fill="none" stroke="#f36b3d"/><text x="15" y="27" fill="#f36b3d" font-size="13">02</text><text x="58" y="17" fill="#eee9dc" font-size="17">GATE FAILED</text><text x="58" y="41" fill="#f36b3d" font-size="13">required object absent</text></g>
+      <path d="M645 22h70" stroke="#3d433a"/>
+      <g transform="translate(725)"><circle cx="22" cy="22" r="21" fill="none" stroke="#ffcf68"/><text x="15" y="27" fill="#ffcf68" font-size="13">03</text><text x="58" y="17" fill="#eee9dc" font-size="17">SCOPED RETRY</text><text x="58" y="41" fill="#777d70" font-size="13">one failed node</text></g>
+      <path d="M1000 22h70" stroke="#3d433a"/>
+      <g transform="translate(1080)"><circle cx="22" cy="22" r="21" fill="#b8f36a"/><text x="15" y="27" fill="#111410" font-size="13">04</text><text x="58" y="17" fill="#eee9dc" font-size="17">READBACK VERIFIED</text><text x="58" y="41" fill="#b8f36a" font-size="13">evidence trail complete</text></g>
+    </g>
+    <rect x="28" y="164" width="1368" height="1" fill="#2c3029"/>
+    <text x="28" y="198" fill="#8a8f81" font-family="Consolas, monospace" font-size="13">INVALID OUTPUT RELEASED</text>
+    <text x="1384" y="200" fill="#b8f36a" font-family="Baskerville, serif" font-size="38" text-anchor="end">0</text>
+  </g>
+</svg>

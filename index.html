@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Molly is an evidence-first multimodal operations agent built for reliable, auditable production work.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="theme-color" content="#111410">
+  <title>Molly — Evidence-First Multimodal Agent</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Molly case study home">
+      <span class="wordmark-mark">M</span>
+      <span>Molly / Case 01</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#incident">Incident</a>
+      <a href="#system">System</a>
+      <a href="#boundary">Boundary</a>
+      <a class="nav-contact" href="mailto:farewell13710@gmail.com">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>Production case study</span><span>2025—2026</span></p>
+        <h1>Production AI should <em>fail visibly</em>, recover locally, and leave evidence.</h1>
+        <p class="lede">Molly is an evidence-first multimodal operations agent that turns messy references into auditable, publish-ready deliverables.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#incident">See the incident</a>
+          <a class="button button-ghost" href="https://github.com/L-iquor/evidence-first-multimodal-agent">GitHub case study ↗</a>
+        </div>
+        <dl class="metadata">
+          <div><dt>Role</dt><dd>Product owner &amp; builder</dd></div>
+          <div><dt>Environment</dt><dd>Live consumer operations</dd></div>
+          <div><dt>Focus</dt><dd>Agent reliability</dd></div>
+        </dl>
+      </div>
+
+      <div class="run-card" role="group" aria-label="A simulated, non-executable agent run illustrating scoped failure recovery">
+        <div class="run-header">
+          <div><span class="live-dot"></span> RUN / CASE-231</div>
+          <span>SANITIZED REPLAY</span>
+        </div>
+        <ol class="run-timeline">
+          <li class="complete"><span class="step-index">01</span><div><b>Evidence sealed</b><small>Source package and task boundary recorded</small></div><span class="status">PASS</span></li>
+          <li class="complete"><span class="step-index">02</span><div><b>Candidate generated</b><small>Multimodal output returned to evaluator</small></div><span class="status">PASS</span></li>
+          <li class="failed"><span class="step-index">03</span><div><b>Required object absent</b><small>Candidate blocked before inventory</small></div><span class="status">FAIL</span></li>
+          <li class="recovery"><span class="step-index">04</span><div><b>Scoped recovery</b><small>Only the failed generation node is retried</small></div><span class="status">RETRY</span></li>
+          <li class="complete final"><span class="step-index">05</span><div><b>Readback verified</b><small>Accepted artifact and evidence trail match</small></div><span class="status">DONE</span></li>
+        </ol>
+        <div class="run-footer"><span>INVALID OUTPUT RELEASED</span><strong>0</strong></div>
+      </div>
+    </section>
+
+    <section class="thesis" aria-labelledby="thesis-title">
+      <p class="section-number">01 / THE PROBLEM</p>
+      <div>
+        <h2 id="thesis-title">Generation was never the hard part.</h2>
+        <p>A plausible output can still be operationally wrong: required content may be absent, source evidence can disappear, tasks can contaminate one another, and a retry can duplicate downstream work.</p>
+      </div>
+      <blockquote>“A successful model response is not a completed business task.”</blockquote>
+    </section>
+
+    <section class="incident" id="incident" aria-labelledby="incident-title">
+      <div class="incident-heading">
+        <p class="section-number">02 / THE INCIDENT</p>
+        <h2 id="incident-title">The image looked finished.<br>The product was missing.</h2>
+        <p>The immediate defect was visual. The system defect was semantic: an intermediate reference had been allowed to masquerade as a final deliverable.</p>
+      </div>
+      <div class="incident-grid">
+        <article class="incident-card before">
+          <div class="card-label">BEFORE / FALSE COMPLETION</div>
+          <div class="artifact-frame">
+            <div class="scene scene-empty"><span>visually plausible</span></div>
+            <span class="artifact-tag bad">required object: absent</span>
+          </div>
+          <p>The workflow checked that an image existed. It did not yet prove that the image satisfied the deliverable contract.</p>
+        </article>
+        <div class="intervention" aria-hidden="true">
+          <span>ROOT CAUSE</span>
+          <strong>Asset states were implicit</strong>
+          <i>→</i>
+        </div>
+        <article class="incident-card after">
+          <div class="card-label">AFTER / EVIDENCE-BACKED COMPLETION</div>
+          <div class="artifact-frame">
+            <div class="scene scene-valid"><span class="object-shape"></span><span>contract satisfied</span></div>
+            <span class="artifact-tag good">readback: verified</span>
+          </div>
+          <p>Source, intermediate, candidate, accepted deliverable, and downstream record became explicit states with separate gates.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="system" id="system" aria-labelledby="system-title">
+      <div class="system-intro">
+        <p class="section-number">03 / THE SYSTEM</p>
+        <h2 id="system-title">One bounded reliability loop.</h2>
+        <p>The public view stays intentionally black-box. It shows the control logic that makes the agent accountable without releasing the proprietary runtime.</p>
+      </div>
+      <ol class="loop" aria-label="Agent reliability loop">
+        <li><span>01</span><b>Observe</b><small>Collect evidence</small></li>
+        <li><span>02</span><b>Contract</b><small>Seal the task</small></li>
+        <li><span>03</span><b>Generate</b><small>Produce a candidate</small></li>
+        <li class="gate"><span>04</span><b>Gate</b><small>Evaluate release</small></li>
+        <li><span>05</span><b>Recover</b><small>Retry one node</small></li>
+        <li><span>06</span><b>Deliver</b><small>Verify readback</small></li>
+      </ol>
+      <div class="principles">
+        <article><span class="principle-id">A</span><h3>Evidence grounding</h3><p>Accepted results remain traceable to their source material and task boundary.</p></article>
+        <article><span class="principle-id">B</span><h3>Multimodal evaluation</h3><p>Visual integrity and deliverable completeness are checked before release.</p></article>
+        <article><span class="principle-id">C</span><h3>Job isolation</h3><p>Each run receives an isolated evidence bundle to reduce cross-task contamination.</p></article>
+        <article><span class="principle-id">D</span><h3>Scoped recovery</h3><p>A failed node is retried without silently accepting degradation or restarting everything.</p></article>
+        <article><span class="principle-id">E</span><h3>Human authority</h3><p>The agent can recommend and execute, but it cannot manufacture approval.</p></article>
+        <article><span class="principle-id">F</span><h3>Operational readback</h3><p>Completion depends on verified downstream state—not on model confidence.</p></article>
+      </div>
+    </section>
+
+    <section class="builder" aria-labelledby="builder-title">
+      <p class="section-number">04 / THE BUILDER</p>
+      <h2 id="builder-title">From messy workflow to operating product.</h2>
+      <p>I translate frontline ambiguity into product boundaries, state transitions, evaluation criteria, recovery paths, and interfaces that people can actually run.</p>
+      <div class="builder-track">
+        <span>Workflow discovery</span><i>→</i><span>Product architecture</span><i>→</i><span>Agent orchestration</span><i>→</i><span>Evaluation</span><i>→</i><span>Deployment &amp; adoption</span>
+      </div>
+      <p class="role-fit">Relevant to <b>Forward Deployed AI</b>, <b>Applied AI Product</b>, <b>AI Solutions</b>, and <b>Agent Product</b> roles.</p>
+    </section>
+
+    <section class="boundary" id="boundary" aria-labelledby="boundary-title">
+      <div>
+        <p class="section-number">05 / THE BOUNDARY</p>
+        <h2 id="boundary-title">Transparent decisions.<br>Private implementation.</h2>
+      </div>
+      <div class="boundary-copy">
+        <p>This case study is public. The production system is not. The diagrams communicate the engineering decisions without releasing a cloneable runtime.</p>
+        <ul>
+          <li>Source code and deployment automation</li>
+          <li>Prompts, thresholds, rubrics, and recovery rules</li>
+          <li>Platform adapters and authentication flows</li>
+          <li>Private datasets, assets, schemas, and logs</li>
+        </ul>
+        <p class="private-walkthrough">A private walkthrough can be provided during a serious interview under an appropriate confidentiality boundary.</p>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <p class="section-number">LET'S TALK</p>
+      <h2 id="contact-title">Need someone who can make AI work outside the demo?</h2>
+      <a href="mailto:farewell13710@gmail.com">farewell13710@gmail.com <span>↗</span></a>
+      <a href="https://www.linkedin.com/in/honglin-liao-343066251/">LinkedIn <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Honglin Liao</span>
+    <span>Closed-source production case study</span>
+    <span>Hong Kong / APAC</span>
+  </footer>
+</body>
+</html>
