@@ -1,18 +1,32 @@
-# Molly — Evidence-First Multimodal Operations Agent
+# Molly — Market Intelligence and Evidence-First Operations Agent
 
-> A closed-source production case study about making multimodal agents reliable enough for real operations.
+> A closed-source production case study about turning real search behavior into evidence-backed content—and making the agent reliable enough for live operations.
 
 ![Molly reliability loop](assets/readme-hero.svg)
 
-**Molly turns messy references into auditable, publish-ready deliverables.** It combines model planning with evidence contracts, deterministic policy gates, multimodal evaluation, human review, scoped retries, and rollback.
+**Molly starts before the prompt.** It simulates how people search, validates public market signals, identifies the decision job a piece of content must perform, and turns that evidence into a publishable draft. Evidence contracts, deterministic gates, human review, scoped retries, and rollback keep the workflow honest.
 
 [View the visual case study](https://l-iquor.github.io/evidence-first-multimodal-agent/) · [Contact Honglin](mailto:farewell13710@gmail.com) · [LinkedIn](https://www.linkedin.com/in/honglin-liao-343066251/)
 
-## 35-second end-to-end walkthrough
+## 50-second market-intelligence walkthrough
 
-[![Watch Molly block, recover, and verify a fictional case](assets/molly-reliability-walkthrough-poster.png)](https://l-iquor.github.io/evidence-first-multimodal-agent/)
+[![Watch Molly turn search behavior into evidence-backed copy](assets/molly-market-intelligence-poster.png)](https://l-iquor.github.io/evidence-first-multimodal-agent/)
 
-The narrated walkthrough runs once on page load (muted by default to satisfy browser autoplay rules) and remains understandable without audio. Turn sound on for the paced explanation of the full observable sequence—plausible failure, evidence gate, scoped recovery, readback verification, and targeted test evidence—using fictional assets only. [Open the MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-reliability-walkthrough.mp4).
+The narrated walkthrough runs once on page load (muted by default to satisfy browser autoplay rules) and remains understandable without audio. It follows this observable sequence:
+
+```text
+NATURAL QUERY → SEARCH CHAIN → SOURCE EVIDENCE → DECISION JOB → COPY
+```
+
+The real Market Hub interface, the last verified signal inventory, and the historical successful draft are sanitized. A live re-run that was denied source access is labeled separately; the system rejected the empty collection rather than manufacturing a trend. [Open the MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-market-intelligence-demo.mp4).
+
+### What the representative run demonstrates
+
+- **Search-behavior simulation** — starts with language a person might actually type, then expands it into questions, comparisons, intent, and friction.
+- **Market-signal validation** — a plausible keyword is not enough; source posts and engagement evidence determine whether it moves forward.
+- **Decision-stage mapping** — each piece is assigned one job: stop, identify, explain, build trust, or move toward purchase.
+- **Evidence-backed generation** — titles and copy receive structured search intent, user problem, scene, and product bridge—not an isolated prompt.
+- **Visible failure** — if the source layer returns no usable notes, the run stops and preserves the last verified inventory.
 
 ## Try the public synthetic sandbox
 
@@ -28,7 +42,7 @@ The public page starts this replay automatically: a plausible but wrong image go
 
 ## Why this project exists
 
-Generating an image or a paragraph is easy. Operating a non-deterministic model inside a live business is not.
+Generating an image or a paragraph is easy. Choosing what deserves to be generated—and proving why—is the harder product problem. Operating that non-deterministic model inside a live business is harder still.
 
 A visually plausible output can still be unusable: a required product may be absent, source evidence may be lost, text can drift, two jobs can contaminate each other, or a retry can duplicate downstream work. Molly was built around the operational consequence of those failures—not around the novelty of generation.
 
@@ -36,7 +50,7 @@ A visually plausible output can still be unusable: a required product may be abs
 | --- | --- |
 | Environment | Live consumer operations, 2025–2026 |
 | My role | Product owner and hands-on builder |
-| Core problem | Reliable multimodal work across evidence, generation, evaluation, review, and delivery |
+| Core problem | Move from real demand signals to reliable multimodal work across evidence, generation, evaluation, review, and delivery |
 | Design goal | Fail visibly, recover locally, and never claim completion without readback evidence |
 
 ## The representative incident

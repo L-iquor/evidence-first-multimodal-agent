@@ -6,6 +6,7 @@
   <meta name="description" content="Molly is an evidence-first multimodal operations agent built for reliable, auditable production work.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; connect-src 'none'; upgrade-insecure-requests">
   <meta name="theme-color" content="#111410">
+  <link rel="icon" href="data:,">
   <title>Molly — Evidence-First Multimodal Agent</title>
   <link rel="stylesheet" href="styles.css">
   <script src="sandbox.js" defer></script>
@@ -18,7 +19,7 @@
       <span>Molly / Case 01</span>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="#sandbox">Demo</a>
+      <a href="#replay">Demo</a>
       <a href="#incident">Incident</a>
       <a href="#system">System</a>
       <a href="#boundary">Boundary</a>
@@ -30,42 +31,42 @@
     <section class="hero" id="top">
       <div class="hero-copy">
         <p class="eyebrow"><span>Production case study</span><span>2025—2026</span></p>
-        <h1>Production AI should <em>fail visibly</em>, recover locally, and leave evidence.</h1>
-        <p class="lede">Molly is an evidence-first multimodal operations agent that turns messy references into auditable, publish-ready deliverables.</p>
+        <h1>Find the <em>demand</em> before generating the content.</h1>
+        <p class="lede">Molly simulates real search behavior, validates market signals, maps decision intent, and turns evidence into copy—without inventing a trend when fresh data is unavailable.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="assets/molly-reliability-walkthrough.mp4">Watch the 35-sec walkthrough</a>
+          <a class="button button-primary" href="assets/molly-market-intelligence-demo.mp4">Watch the 50-sec walkthrough</a>
           <a class="button button-ghost" href="https://github.com/L-iquor/evidence-first-multimodal-agent">GitHub case study ↗</a>
         </div>
         <dl class="metadata">
           <div><dt>Role</dt><dd>Product owner &amp; builder</dd></div>
           <div><dt>Environment</dt><dd>Live consumer operations</dd></div>
-          <div><dt>Focus</dt><dd>Agent reliability</dd></div>
+          <div><dt>Focus</dt><dd>Market intelligence + reliability</dd></div>
         </dl>
       </div>
 
       <figure class="hero-replay">
-        <div class="replay-status"><span><i></i> AUTO-RUNNING NOW</span><span>35 SEC / NARRATED — UNMUTE ↗</span></div>
-        <video id="walkthrough-video" muted playsinline controls preload="metadata" poster="assets/molly-reliability-walkthrough-poster.png" aria-label="Narrated 35-second Molly reliability walkthrough. Use the video controls to turn sound on.">
-          <source src="assets/molly-reliability-walkthrough.mp4" type="video/mp4">
-          Your browser does not support embedded video. <a href="assets/molly-reliability-walkthrough.mp4">Open the walkthrough</a>.
+        <div class="replay-status"><span><i></i> AUTO-RUNNING NOW</span><span>50 SEC / NARRATED — UNMUTE ↗</span></div>
+        <video id="walkthrough-video" muted playsinline controls preload="metadata" poster="assets/molly-market-intelligence-poster.png" aria-label="Narrated 50-second Molly market-intelligence walkthrough. Use the video controls to turn sound on.">
+          <source src="assets/molly-market-intelligence-demo.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="assets/molly-market-intelligence-demo.mp4">Open the walkthrough</a>.
         </video>
-        <figcaption><b>Sound on:</b> a paced voiceover explains the full loop: plausible failure → evidence gate → scoped recovery → verified readback. Fictional assets, real product decisions.</figcaption>
+        <figcaption><b>Sound on:</b> a paced voiceover follows one real, sanitized path: vague user thought → search chain → verified signal → decision brief → copy. The live re-run failure is labeled separately from the last verified result.</figcaption>
       </figure>
     </section>
 
     <section class="replay" id="replay" aria-labelledby="replay-title">
       <div class="replay-heading">
         <p class="section-number">01 / WHAT IT DOES</p>
-        <h2 id="replay-title">One wrong image in.<br>One verified image out.</h2>
-        <p>The replay above starts automatically. It shows the product behavior in one pass without exposing the production implementation.</p>
+        <h2 id="replay-title">One vague thought in.<br>One evidence-backed brief out.</h2>
+        <p>The replay above uses a real Market Hub screen, sanitized historical evidence, and a clearly labeled live failure test. It shows what the system decides without releasing the private engine.</p>
       </div>
       <ol class="replay-steps">
-        <li><span>INPUT</span><b>Evidence + candidate</b><small>The requested product is missing from an otherwise plausible image.</small></li>
-        <li><span>AI DECISION</span><b>Block the release</b><small>The evidence gate identifies the mismatch before anything is published.</small></li>
-        <li><span>RECOVERY</span><b>Redo one failed step</b><small>The system retries generation without repeating completed downstream work.</small></li>
-        <li><span>OUTPUT</span><b>Verify, then deliver</b><small>The repaired image is read back and linked to its decision trail.</small></li>
+        <li><span>INPUT</span><b>A natural user query</b><small>“What should I drink after work?” begins as behavior, not a writing prompt.</small></li>
+        <li><span>DISCOVERY</span><b>Expand the search chain</b><small>The system maps the questions, comparisons, intent, and friction people actually express.</small></li>
+        <li><span>EVIDENCE</span><b>Validate the opportunity</b><small>Only signals supported by real source posts can drive the content brief.</small></li>
+        <li><span>OUTPUT</span><b>Choose one job, then write</b><small>Decision stage, user problem, scene, and product bridge become structured input for titles and copy.</small></li>
       </ol>
-      <div class="replay-evidence"><span>Current targeted evidence</span><strong>10 / 10 workflow suites passed</strong><small>Targeted integration scope—not a full private release certification.</small></div>
+      <div class="replay-evidence"><span>Live re-run result</span><strong>No raw notes → no invented trend</strong><small>The collector rejected an empty run and preserved the last verified signal inventory.</small></div>
     </section>
 
     <section class="sandbox" id="sandbox" aria-labelledby="sandbox-title">
