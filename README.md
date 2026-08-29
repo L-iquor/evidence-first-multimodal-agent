@@ -8,6 +8,12 @@
 
 [View the visual case study](https://l-iquor.github.io/evidence-first-multimodal-agent/) · [Contact Honglin](mailto:farewell13710@gmail.com) · [LinkedIn](https://www.linkedin.com/in/honglin-liao-343066251/)
 
+## 35-second end-to-end walkthrough
+
+[![Watch Molly block, recover, and verify a fictional case](assets/molly-reliability-walkthrough-poster.png)](https://l-iquor.github.io/evidence-first-multimodal-agent/)
+
+The walkthrough runs once on page load and remains understandable without audio. It records the full observable sequence—plausible failure, evidence gate, scoped recovery, readback verification, and targeted test evidence—using fictional assets only. [Open the MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-reliability-walkthrough.mp4).
+
 ## Try the public synthetic sandbox
 
 The case-study page includes a one-click, fictional scenario that visitors can run themselves. It demonstrates the observable product behavior—evaluate, block, recover, and verify—without accepting uploads or connecting to production data, accounts, prompts, policies, or endpoints. The public JavaScript only controls the presentation sequence; it is not the Molly decision engine.

@@ -75,7 +75,8 @@ nav a:hover, nav a:focus-visible { color: var(--acid); }
 .metadata dd { margin: 0; font-size: .72rem; }
 
 .hero-replay { overflow: hidden; margin: 0; border: 1px solid rgba(184, 243, 106, .38); background: #0b0e0a; box-shadow: 0 28px 80px rgba(0,0,0,.42); transform: rotate(1deg); }
-.hero-replay img { display: block; width: 100%; height: auto; }
+.hero-replay img, .hero-replay video { display: block; width: 100%; height: auto; }
+.hero-replay video { aspect-ratio: 16 / 9; background: #0b0e0a; }
 .replay-status, .hero-replay figcaption { display: flex; justify-content: space-between; gap: 1rem; align-items: center; padding: .9rem 1rem; color: var(--muted); font-size: .61rem; letter-spacing: .08em; }
 .replay-status { border-bottom: 1px solid var(--line); }
 .replay-status span:first-child { color: var(--acid); }

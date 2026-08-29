@@ -1,4 +1,11 @@
 (() => {
+  const walkthrough = document.querySelector('#walkthrough-video');
+  if (walkthrough && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    walkthrough.play().catch(() => {
+      // Browser policy may require the visitor to press play; controls remain visible.
+    });
+  }
+
   const consoleElement = document.querySelector('.sandbox-console');
   const runButton = document.querySelector('#run-sandbox');
   const stateLabel = document.querySelector('#sandbox-state');
