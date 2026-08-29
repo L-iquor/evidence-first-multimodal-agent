@@ -3,3 +3,5 @@ Thumbs.db
 *.log
 .tmp/
 assets/case-study-*.png
+assets/replay-stage-*.png
+assets/black-box-replay-contact-sheet.png

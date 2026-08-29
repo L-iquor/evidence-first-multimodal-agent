@@ -8,6 +8,18 @@
 
 [View the visual case study](https://l-iquor.github.io/evidence-first-multimodal-agent/) · [Contact Honglin](mailto:farewell13710@gmail.com) · [LinkedIn](https://www.linkedin.com/in/honglin-liao-343066251/)
 
+## Try the public synthetic sandbox
+
+The case-study page includes a one-click, fictional scenario that visitors can run themselves. It demonstrates the observable product behavior—evaluate, block, recover, and verify—without accepting uploads or connecting to production data, accounts, prompts, policies, or endpoints. The public JavaScript only controls the presentation sequence; it is not the Molly decision engine.
+
+## 16-second auto-running black-box replay
+
+![Sanitized black-box replay of an invalid candidate being blocked, retried at one node, and verified](assets/black-box-replay.gif)
+
+The public page starts this replay automatically: a plausible but wrong image goes in, the AI blocks it because the required product is missing, retries only the failed step, and verifies the repaired output. It uses fictional assets and exposes product behavior—not the production UI or implementation.
+
+**Evidence scope:** a current targeted run covering queue coordination, asset isolation, worker locking, production modes, decision logic, and execution ledgers passed **10/10 workflow suites**. This is targeted integration evidence, not a claim that the entire private production release is green.
+
 ## Why this project exists
 
 Generating an image or a paragraph is easy. Operating a non-deterministic model inside a live business is not.

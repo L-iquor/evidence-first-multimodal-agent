@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Molly is an evidence-first multimodal operations agent built for reliable, auditable production work.">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; connect-src 'none'; upgrade-insecure-requests">
   <meta name="theme-color" content="#111410">
   <title>Molly — Evidence-First Multimodal Agent</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="sandbox.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -17,6 +18,7 @@
       <span>Molly / Case 01</span>
     </a>
     <nav aria-label="Primary navigation">
+      <a href="#sandbox">Demo</a>
       <a href="#incident">Incident</a>
       <a href="#system">System</a>
       <a href="#boundary">Boundary</a>
@@ -31,7 +33,7 @@
         <h1>Production AI should <em>fail visibly</em>, recover locally, and leave evidence.</h1>
         <p class="lede">Molly is an evidence-first multimodal operations agent that turns messy references into auditable, publish-ready deliverables.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#incident">See the incident</a>
+          <a class="button button-primary" href="#sandbox">Try the synthetic demo</a>
           <a class="button button-ghost" href="https://github.com/L-iquor/evidence-first-multimodal-agent">GitHub case study ↗</a>
         </div>
         <dl class="metadata">
@@ -41,24 +43,73 @@
         </dl>
       </div>
 
-      <div class="run-card" role="group" aria-label="A simulated, non-executable agent run illustrating scoped failure recovery">
-        <div class="run-header">
-          <div><span class="live-dot"></span> RUN / CASE-231</div>
-          <span>SANITIZED REPLAY</span>
+      <figure class="hero-replay">
+        <div class="replay-status"><span><i></i> AUTO-RUNNING NOW</span><span>16 SEC / LOOPS</span></div>
+        <img src="assets/black-box-replay.gif" alt="Molly automatically receives an image with a missing required product, blocks it, retries only the failed step, and verifies the repaired image">
+        <figcaption><b>What goes in:</b> a plausible but wrong image. <b>What comes out:</b> a verified deliverable plus an evidence trail.</figcaption>
+      </figure>
+    </section>
+
+    <section class="replay" id="replay" aria-labelledby="replay-title">
+      <div class="replay-heading">
+        <p class="section-number">01 / WHAT IT DOES</p>
+        <h2 id="replay-title">One wrong image in.<br>One verified image out.</h2>
+        <p>The replay above starts automatically. It shows the product behavior in one pass without exposing the production implementation.</p>
+      </div>
+      <ol class="replay-steps">
+        <li><span>INPUT</span><b>Evidence + candidate</b><small>The requested product is missing from an otherwise plausible image.</small></li>
+        <li><span>AI DECISION</span><b>Block the release</b><small>The evidence gate identifies the mismatch before anything is published.</small></li>
+        <li><span>RECOVERY</span><b>Redo one failed step</b><small>The system retries generation without repeating completed downstream work.</small></li>
+        <li><span>OUTPUT</span><b>Verify, then deliver</b><small>The repaired image is read back and linked to its decision trail.</small></li>
+      </ol>
+      <div class="replay-evidence"><span>Current targeted evidence</span><strong>10 / 10 workflow suites passed</strong><small>Targeted integration scope—not a full private release certification.</small></div>
+    </section>
+
+    <section class="sandbox" id="sandbox" aria-labelledby="sandbox-title">
+      <div class="sandbox-heading">
+        <p class="section-number">02 / TRY IT</p>
+        <h2 id="sandbox-title">Run one safe, synthetic case.</h2>
+        <p>Press run. Molly will evaluate a fictional image, block the missing product, recover one failed step, and verify the repaired result. No production endpoint, prompt, account, or dataset is connected.</p>
+      </div>
+
+      <div class="sandbox-console" data-sandbox-state="ready">
+        <div class="sandbox-bar">
+          <span><i></i> PUBLIC SANDBOX / CASE-S01</span>
+          <strong id="sandbox-state">READY</strong>
         </div>
-        <ol class="run-timeline">
-          <li class="complete"><span class="step-index">01</span><div><b>Evidence sealed</b><small>Source package and task boundary recorded</small></div><span class="status">PASS</span></li>
-          <li class="complete"><span class="step-index">02</span><div><b>Candidate generated</b><small>Multimodal output returned to evaluator</small></div><span class="status">PASS</span></li>
-          <li class="failed"><span class="step-index">03</span><div><b>Required object absent</b><small>Candidate blocked before inventory</small></div><span class="status">FAIL</span></li>
-          <li class="recovery"><span class="step-index">04</span><div><b>Scoped recovery</b><small>Only the failed generation node is retried</small></div><span class="status">RETRY</span></li>
-          <li class="complete final"><span class="step-index">05</span><div><b>Readback verified</b><small>Accepted artifact and evidence trail match</small></div><span class="status">DONE</span></li>
-        </ol>
-        <div class="run-footer"><span>INVALID OUTPUT RELEASED</span><strong>0</strong></div>
+        <div class="sandbox-body">
+          <div class="sandbox-artifact" role="group" aria-label="Fictional candidate output">
+            <div class="sandbox-contract">
+              <span>FICTIONAL TASK CONTRACT</span>
+              <dl>
+                <div><dt>Required object</dt><dd>Object A</dd></div>
+                <div><dt>Release rule</dt><dd>Evidence match</dd></div>
+                <div><dt>Recovery</dt><dd>Failed node only</dd></div>
+              </dl>
+            </div>
+            <div class="sandbox-scene">
+              <div class="sandbox-bottle" aria-hidden="true"></div>
+              <span class="sandbox-scene-label">candidate not evaluated</span>
+            </div>
+          </div>
+
+          <ol class="sandbox-log" aria-label="Synthetic agent decision trail">
+            <li data-step="1"><span>01</span><div><b>Seal evidence</b><small>Bind source + task contract</small></div><em>WAIT</em></li>
+            <li data-step="2"><span>02</span><div><b>Evaluate candidate</b><small>Compare output to evidence</small></div><em>WAIT</em></li>
+            <li data-step="3"><span>03</span><div><b>Gate release</b><small>Required object is absent</small></div><em>WAIT</em></li>
+            <li data-step="4"><span>04</span><div><b>Recover one node</b><small>Downstream work stays untouched</small></div><em>WAIT</em></li>
+            <li data-step="5"><span>05</span><div><b>Readback proof</b><small>Repaired output matches contract</small></div><em>WAIT</em></li>
+          </ol>
+        </div>
+        <div class="sandbox-controls">
+          <p id="sandbox-message" aria-live="polite">Ready to evaluate a fictional candidate. Nothing will be uploaded.</p>
+          <button id="run-sandbox" type="button">Run synthetic case <span>→</span></button>
+        </div>
       </div>
     </section>
 
     <section class="thesis" aria-labelledby="thesis-title">
-      <p class="section-number">01 / THE PROBLEM</p>
+      <p class="section-number">03 / THE PROBLEM</p>
       <div>
         <h2 id="thesis-title">Generation was never the hard part.</h2>
         <p>A plausible output can still be operationally wrong: required content may be absent, source evidence can disappear, tasks can contaminate one another, and a retry can duplicate downstream work.</p>
@@ -68,7 +119,7 @@
 
     <section class="incident" id="incident" aria-labelledby="incident-title">
       <div class="incident-heading">
-        <p class="section-number">02 / THE INCIDENT</p>
+        <p class="section-number">04 / THE INCIDENT</p>
         <h2 id="incident-title">The image looked finished.<br>The product was missing.</h2>
         <p>The immediate defect was visual. The system defect was semantic: an intermediate reference had been allowed to masquerade as a final deliverable.</p>
       </div>
@@ -99,7 +150,7 @@
 
     <section class="system" id="system" aria-labelledby="system-title">
       <div class="system-intro">
-        <p class="section-number">03 / THE SYSTEM</p>
+        <p class="section-number">05 / THE SYSTEM</p>
         <h2 id="system-title">One bounded reliability loop.</h2>
         <p>The public view stays intentionally black-box. It shows the control logic that makes the agent accountable without releasing the proprietary runtime.</p>
       </div>
@@ -122,7 +173,7 @@
     </section>
 
     <section class="builder" aria-labelledby="builder-title">
-      <p class="section-number">04 / THE BUILDER</p>
+      <p class="section-number">06 / THE BUILDER</p>
       <h2 id="builder-title">From messy workflow to operating product.</h2>
       <p>I translate frontline ambiguity into product boundaries, state transitions, evaluation criteria, recovery paths, and interfaces that people can actually run.</p>
       <div class="builder-track">
@@ -133,7 +184,7 @@
 
     <section class="boundary" id="boundary" aria-labelledby="boundary-title">
       <div>
-        <p class="section-number">05 / THE BOUNDARY</p>
+        <p class="section-number">07 / THE BOUNDARY</p>
         <h2 id="boundary-title">Transparent decisions.<br>Private implementation.</h2>
       </div>
       <div class="boundary-copy">
