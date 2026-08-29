@@ -18,7 +18,7 @@ The narrated walkthrough runs once on page load (muted by default to satisfy bro
 NATURAL QUERY → SEARCH CHAIN → SOURCE EVIDENCE → DECISION JOB → COPY
 ```
 
-The real Market Hub interface, the last verified signal inventory, and the historical successful draft are sanitized. A live re-run that was denied source access is labeled separately; the system rejected the empty collection rather than manufacturing a trend. [Open the MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-market-intelligence-demo.mp4).
+The walkthrough shows one sanitized, successful live run: fresh public search evidence becomes five ranked market insights, one selected brief, and a generated draft. Private prompts, credentials, source code, and production data remain excluded. [Open the MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-market-intelligence-demo.mp4?v=20260830-success).
 
 ### What the representative run demonstrates
 
@@ -26,7 +26,7 @@ The real Market Hub interface, the last verified signal inventory, and the histo
 - **Market-signal validation** — a plausible keyword is not enough; source posts and engagement evidence determine whether it moves forward.
 - **Decision-stage mapping** — each piece is assigned one job: stop, identify, explain, build trust, or move toward purchase.
 - **Evidence-backed generation** — titles and copy receive structured search intent, user problem, scene, and product bridge—not an isolated prompt.
-- **Visible failure** — if the source layer returns no usable notes, the run stops and preserves the last verified inventory.
+- **Fail-closed collection** — if the source layer returns no usable notes, the run stops instead of manufacturing a trend.
 
 ## Try the public synthetic sandbox
 
