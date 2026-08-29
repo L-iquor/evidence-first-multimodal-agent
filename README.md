@@ -12,7 +12,7 @@
 
 [![Watch Molly block, recover, and verify a fictional case](assets/molly-reliability-walkthrough-poster.png)](https://l-iquor.github.io/evidence-first-multimodal-agent/)
 
-The walkthrough runs once on page load and remains understandable without audio. It records the full observable sequence—plausible failure, evidence gate, scoped recovery, readback verification, and targeted test evidence—using fictional assets only. [Open the MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-reliability-walkthrough.mp4).
+The narrated walkthrough runs once on page load (muted by default to satisfy browser autoplay rules) and remains understandable without audio. Turn sound on for the paced explanation of the full observable sequence—plausible failure, evidence gate, scoped recovery, readback verification, and targeted test evidence—using fictional assets only. [Open the MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-reliability-walkthrough.mp4).
 
 ## Try the public synthetic sandbox
 
