@@ -1,32 +1,33 @@
-# Molly — Market Intelligence and Evidence-First Operations Agent
+# Molly: Behavior-Led Media Agent
 
-> A closed-source production case study about turning real search behavior into evidence-backed content—and making the agent reliable enough for live operations.
+> A closed-source production case study about turning observable market behavior into media decisions, then returning real outcomes to the next cycle.
 
 ![Molly reliability loop](assets/readme-hero.svg)
 
-**Molly starts before the prompt.** It simulates how people search, validates public market signals, identifies the decision job a piece of content must perform, and turns that evidence into a publishable draft. Evidence contracts, deterministic gates, human review, scoped retries, and rollback keep the workflow honest.
+**Molly starts with how the market behaves.** It forms a search-behavior hypothesis, validates it against fresh public signals, identifies the change a person is trying to make, and issues one bounded media decision. Production outcomes return as evidence for the next cycle. Evidence contracts, deterministic gates, human review, scoped retries, and rollback keep the loop accountable.
 
 [View the visual case study](https://l-iquor.github.io/evidence-first-multimodal-agent/) · [Contact Honglin](mailto:farewell13710@gmail.com) · [LinkedIn](https://www.linkedin.com/in/honglin-liao-343066251/)
 
-## 50-second market-intelligence walkthrough
+## 50-second market-behavior walkthrough
 
-[![Watch Molly turn search behavior into evidence-backed copy](assets/molly-market-intelligence-poster.png)](https://l-iquor.github.io/evidence-first-multimodal-agent/)
+[![Watch Molly turn market behavior into media action](assets/molly-market-behavior-poster.png)](https://l-iquor.github.io/evidence-first-multimodal-agent/)
 
 The narrated walkthrough runs once on page load (muted by default to satisfy browser autoplay rules) and remains understandable without audio. It follows this observable sequence:
 
 ```text
-NATURAL QUERY → SEARCH CHAIN → SOURCE EVIDENCE → DECISION JOB → COPY
+BEHAVIOR → HYPOTHESIS → LIVE VALIDATION → CONTENT DECISION → MEDIA ACTION → OUTCOME LEARNING
 ```
 
-The walkthrough shows one sanitized, successful live run: fresh public search evidence becomes five ranked market insights, one selected brief, and a generated draft. Private prompts, credentials, source code, and production data remain excluded. [Open the MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-market-intelligence-demo.mp4?v=20260830-success).
+The walkthrough shows one sanitized, successful sensing-and-decision run: 120 fresh source notes become five supported opportunities, one interpreted user job, and one media action. It then shows how the production system returns reading, saving, store, purchase, and refund outcomes to the next cycle. The public run proves the sensing-and-decision portion; the outcome sequence describes the implemented operating loop. Private prompts, credentials, source code, and production data remain excluded. [Open the captioned MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-market-behavior-demo.mp4?v=20260830-loop).
 
 ### What the representative run demonstrates
 
-- **Search-behavior simulation** — starts with language a person might actually type, then expands it into questions, comparisons, intent, and friction.
-- **Market-signal validation** — a plausible keyword is not enough; source posts and engagement evidence determine whether it moves forward.
-- **Decision-stage mapping** — each piece is assigned one job: stop, identify, explain, build trust, or move toward purchase.
-- **Evidence-backed generation** — titles and copy receive structured search intent, user problem, scene, and product bridge—not an isolated prompt.
-- **Fail-closed collection** — if the source layer returns no usable notes, the run stops instead of manufacturing a trend.
+- **Behavior hypothesis**: starts with language a person might actually type, then expands it into questions, comparisons, intent, and friction.
+- **Live market validation**: source posts and engagement evidence determine which parts of the hypothesis move forward.
+- **Decision-job interpretation**: each piece receives one job: earn attention, create recognition, explain, build trust, or support purchase.
+- **Media action**: titles and copy receive structured search intent, desired change, scene, and product bridge.
+- **Outcome learning**: real reading, saving, store, purchase, and refund signals return to the next market cycle.
+- **Evidence-safe execution**: empty or stale source states remain visible and preserve the last verified inventory.
 
 ## Try the public synthetic sandbox
 
@@ -42,7 +43,7 @@ The public page starts this replay automatically: a plausible but wrong image go
 
 ## Why this project exists
 
-Generating an image or a paragraph is easy. Choosing what deserves to be generated—and proving why—is the harder product problem. Operating that non-deterministic model inside a live business is harder still.
+The market speaks through behavior, while most content production begins from a brand brief. The product problem is turning those behavioral traces into a defensible decision about what content should do, then carrying that decision through live operations and learning from the result.
 
 A visually plausible output can still be unusable: a required product may be absent, source evidence may be lost, text can drift, two jobs can contaminate each other, or a retry can duplicate downstream work. Molly was built around the operational consequence of those failures—not around the novelty of generation.
 
@@ -50,7 +51,7 @@ A visually plausible output can still be unusable: a required product may be abs
 | --- | --- |
 | Environment | Live consumer operations, 2025–2026 |
 | My role | Product owner and hands-on builder |
-| Core problem | Move from real demand signals to reliable multimodal work across evidence, generation, evaluation, review, and delivery |
+| Core problem | Close the loop between observable market behavior, media action, and real operating outcomes |
 | Design goal | Fail visibly, recover locally, and never claim completion without readback evidence |
 
 ## The representative incident

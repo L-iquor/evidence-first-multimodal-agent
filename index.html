@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Molly is an evidence-first multimodal operations agent built for reliable, auditable production work.">
+  <meta name="description" content="Molly turns observable market behavior into evidence-backed media decisions, then returns real outcomes to the next cycle.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; connect-src 'none'; upgrade-insecure-requests">
   <meta name="theme-color" content="#111410">
   <link rel="icon" href="data:,">
-  <title>Molly — Evidence-First Multimodal Agent</title>
+  <title>Molly | Behavior-Led Media Agent</title>
   <link rel="stylesheet" href="styles.css">
   <script src="sandbox.js" defer></script>
 </head>
@@ -16,11 +16,12 @@
   <header class="topbar">
     <a class="wordmark" href="#top" aria-label="Molly case study home">
       <span class="wordmark-mark">M</span>
-      <span>Molly / Case 01</span>
+      <span>Molly / Market Loop</span>
     </a>
     <nav aria-label="Primary navigation">
       <a href="#replay">Demo</a>
-      <a href="#incident">Incident</a>
+      <a href="#sandbox">Try it</a>
+      <a href="#incident">Reliability</a>
       <a href="#system">System</a>
       <a href="#boundary">Boundary</a>
       <a class="nav-contact" href="mailto:farewell13710@gmail.com">Contact</a>
@@ -30,100 +31,108 @@
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-copy">
-        <p class="eyebrow"><span>Production case study</span><span>2025—2026</span></p>
-        <h1>Find the <em>demand</em> before generating the content.</h1>
-        <p class="lede">Molly simulates real search behavior, validates market signals, maps decision intent, and turns evidence into copy—without inventing a trend when fresh data is unavailable.</p>
+        <p class="eyebrow"><span>Behavior-led media agent</span><span>2025-2026</span></p>
+        <h1>Turn market <em>behavior</em> into media action.</h1>
+        <p class="lede">Molly turns search and engagement signals into content decisions, then uses real outcomes to improve the next cycle.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="assets/molly-market-intelligence-demo.mp4?v=20260830-success">Watch the 50-sec walkthrough</a>
-          <a class="button button-ghost" href="https://github.com/L-iquor/evidence-first-multimodal-agent">GitHub case study ↗</a>
+          <a class="button button-primary" href="assets/molly-market-behavior-demo.mp4?v=20260830-loop">Watch the 50-sec loop</a>
+          <a class="button button-ghost" href="https://github.com/L-iquor/evidence-first-multimodal-agent">View case study ↗</a>
         </div>
         <dl class="metadata">
           <div><dt>Role</dt><dd>Product owner &amp; builder</dd></div>
           <div><dt>Environment</dt><dd>Live consumer operations</dd></div>
-          <div><dt>Focus</dt><dd>Market intelligence + reliability</dd></div>
+          <div><dt>Focus</dt><dd>Behavior to media action</dd></div>
         </dl>
       </div>
 
       <figure class="hero-replay">
-        <div class="replay-status"><span><i></i> AUTO-RUNNING NOW</span><span>50 SEC / NARRATED — UNMUTE ↗</span></div>
-        <video id="walkthrough-video" muted playsinline controls preload="metadata" poster="assets/molly-market-intelligence-poster.png?v=20260830-success" aria-label="Narrated 50-second Molly market-intelligence walkthrough. Use the video controls to turn sound on.">
-          <source src="assets/molly-market-intelligence-demo.mp4?v=20260830-success" type="video/mp4">
-          Your browser does not support embedded video. <a href="assets/molly-market-intelligence-demo.mp4?v=20260830-success">Open the walkthrough</a>.
+        <div class="replay-status"><span><i></i> AUTO-RUNNING NOW</span><span>50 SEC / NARRATED / CAPTIONED</span></div>
+        <video id="walkthrough-video" muted playsinline controls preload="metadata" poster="assets/molly-market-behavior-poster.png?v=20260830-loop" aria-label="Narrated 50-second Molly market-behavior walkthrough. Use the video controls to turn sound on.">
+          <source src="assets/molly-market-behavior-demo.mp4?v=20260830-loop" type="video/mp4">
+          <track kind="captions" srclang="en" label="English" src="assets/molly-market-behavior-demo.vtt?v=20260830-loop" default>
+          Your browser does not support embedded video. <a href="assets/molly-market-behavior-demo.mp4?v=20260830-loop">Open the walkthrough</a>.
         </video>
-        <figcaption><b>Sound on:</b> a paced voiceover follows one successful, sanitized live run: vague user thought → fresh search evidence → five ranked insights → selected brief → generated copy.</figcaption>
+        <figcaption><b>What to watch:</b> a vague human need becomes a verified decision, a media action, and a measurable learning loop. The copy is only one output.</figcaption>
       </figure>
     </section>
 
     <section class="replay" id="replay" aria-labelledby="replay-title">
       <div class="replay-heading">
-        <p class="section-number">01 / WHAT IT DOES</p>
-        <h2 id="replay-title">One vague thought in.<br>One evidence-backed brief out.</h2>
-        <p>The replay above uses a real Market Hub screen and fresh, sanitized evidence from one successful live run. It shows what the system decides without releasing the private engine.</p>
+        <p class="section-number">THE PRODUCT</p>
+        <h2 id="replay-title">The copy is the output.<br>The product is the loop.</h2>
+        <p>The replay uses a real Market Hub run to show how observable behavior changes what gets made. Private prompts, code, credentials, and production data stay excluded.</p>
       </div>
       <ol class="replay-steps">
-        <li><span>INPUT</span><b>A natural user query</b><small>“What should I drink after work?” begins as behavior, not a writing prompt.</small></li>
-        <li><span>DISCOVERY</span><b>Expand the search chain</b><small>The system maps the questions, comparisons, intent, and friction people actually express.</small></li>
-        <li><span>EVIDENCE</span><b>Validate the opportunity</b><small>Only signals supported by real source posts can drive the content brief.</small></li>
-        <li><span>OUTPUT</span><b>Choose one job, then write</b><small>Decision stage, user problem, scene, and product bridge become structured input for titles and copy.</small></li>
+        <li><span>HYPOTHESIZE</span><b>Model the search path</b><small>A vague need becomes a testable sequence of questions and comparisons.</small></li>
+        <li><span>VERIFY</span><b>Check real behavior</b><small>Fresh source posts decide which parts of the hypothesis survive.</small></li>
+        <li><span>INTERPRET</span><b>Find the real job</b><small>The system identifies what the person is trying to change, not what the brand wants to say.</small></li>
+        <li><span>ACT</span><b>Issue one media decision</b><small>Decision stage, scene, and product bridge become a bounded content task.</small></li>
+        <li><span>LEARN</span><b>Return real outcomes</b><small>Reading, saving, store, purchase, and refund signals inform the next cycle.</small></li>
       </ol>
-      <div class="replay-evidence"><span>Verified live run</span><strong>120 notes → 5 insights → 1 draft</strong><small>Fresh public evidence was collected and transformed without exposing production prompts, code, credentials, or private data.</small></div>
+      <div class="replay-evidence"><span>Verified live run</span><strong>120 notes → 5 insights → 1 decision</strong><small>The public proof shows the sensing and decision half. The production system carries that decision through publishing and outcome readback.</small></div>
     </section>
 
     <section class="sandbox" id="sandbox" aria-labelledby="sandbox-title">
       <div class="sandbox-heading">
-        <p class="section-number">02 / TRY IT</p>
-        <h2 id="sandbox-title">Run one safe, synthetic case.</h2>
-        <p>Press run. Molly will evaluate a fictional image, block the missing product, recover one failed step, and verify the repaired result. No production endpoint, prompt, account, or dataset is connected.</p>
+        <p class="section-number">TRY THE LOOP</p>
+        <h2 id="sandbox-title">Watch behavior change the brief.</h2>
+        <p>Press run. A sanitized example moves from a vague search to a verified need, then becomes one media decision. No production endpoint, account, prompt, or private dataset is connected.</p>
       </div>
 
       <div class="sandbox-console" data-sandbox-state="ready">
         <div class="sandbox-bar">
-          <span><i></i> PUBLIC SANDBOX / CASE-S01</span>
+          <span><i></i> PUBLIC SANDBOX / BEHAVIOR LOOP</span>
           <strong id="sandbox-state">READY</strong>
         </div>
         <div class="sandbox-body">
           <div class="sandbox-artifact" role="group" aria-label="Fictional candidate output">
             <div class="sandbox-contract">
-              <span>FICTIONAL TASK CONTRACT</span>
+              <span>SANITIZED INPUT</span>
               <dl>
-                <div><dt>Required object</dt><dd>Object A</dd></div>
-                <div><dt>Release rule</dt><dd>Evidence match</dd></div>
-                <div><dt>Recovery</dt><dd>Failed node only</dd></div>
+                <div><dt>Vague thought</dt><dd>下班想喝点什么</dd></div>
+                <div><dt>Evidence rule</dt><dd>Fresh source match</dd></div>
+                <div><dt>Output</dt><dd>One content job</dd></div>
               </dl>
             </div>
             <div class="sandbox-scene">
-              <div class="sandbox-bottle" aria-hidden="true"></div>
-              <span class="sandbox-scene-label">candidate not evaluated</span>
+              <div class="search-stack" aria-hidden="true">
+                <span>下班想喝点什么</span>
+                <span>在家小酌喝什么酒</span>
+                <span>低度酒推荐</span>
+              </div>
+              <div class="intent-card" aria-hidden="true"><small>REAL JOB</small><strong>Switch work off</strong></div>
+              <span class="sandbox-scene-label">awaiting interpretation</span>
             </div>
           </div>
 
           <ol class="sandbox-log" aria-label="Synthetic agent decision trail">
-            <li data-step="1"><span>01</span><div><b>Seal evidence</b><small>Bind source + task contract</small></div><em>WAIT</em></li>
-            <li data-step="2"><span>02</span><div><b>Evaluate candidate</b><small>Compare output to evidence</small></div><em>WAIT</em></li>
-            <li data-step="3"><span>03</span><div><b>Gate release</b><small>Required object is absent</small></div><em>WAIT</em></li>
-            <li data-step="4"><span>04</span><div><b>Recover one node</b><small>Downstream work stays untouched</small></div><em>WAIT</em></li>
-            <li data-step="5"><span>05</span><div><b>Readback proof</b><small>Repaired output matches contract</small></div><em>WAIT</em></li>
+            <li data-step="1"><span>01</span><div><b>Observe behavior</b><small>Start from a human need</small></div><em>WAIT</em></li>
+            <li data-step="2"><span>02</span><div><b>Propose a path</b><small>Form a search hypothesis</small></div><em>WAIT</em></li>
+            <li data-step="3"><span>03</span><div><b>Verify the signal</b><small>Match fresh source evidence</small></div><em>WAIT</em></li>
+            <li data-step="4"><span>04</span><div><b>Interpret the job</b><small>Find the desired state</small></div><em>WAIT</em></li>
+            <li data-step="5"><span>05</span><div><b>Issue media action</b><small>Choose one content task</small></div><em>WAIT</em></li>
+            <li data-step="6"><span>06</span><div><b>Return outcomes</b><small>Feed results into the next cycle</small></div><em>WAIT</em></li>
           </ol>
         </div>
         <div class="sandbox-controls">
-          <p id="sandbox-message" aria-live="polite">Ready to evaluate a fictional candidate. Nothing will be uploaded.</p>
-          <button id="run-sandbox" type="button">Run synthetic case <span>→</span></button>
+          <p id="sandbox-message" aria-live="polite">Ready to run a sanitized behavior loop. Nothing will be uploaded.</p>
+          <button id="run-sandbox" type="button">Run behavior loop <span>→</span></button>
         </div>
       </div>
     </section>
 
     <section class="thesis" aria-labelledby="thesis-title">
-      <p class="section-number">03 / THE PROBLEM</p>
+      <p class="section-number">THE PAIN</p>
       <div>
-        <h2 id="thesis-title">Generation was never the hard part.</h2>
-        <p>A plausible output can still be operationally wrong: required content may be absent, source evidence can disappear, tasks can contaminate one another, and a retry can duplicate downstream work.</p>
+        <h2 id="thesis-title">The market is talking. Most content systems cannot hear it.</h2>
+        <p>Searches, comments, saves, store visits, and purchases reveal what people are trying to solve. In most teams, those signals never change the next piece of content.</p>
       </div>
-      <blockquote>“A successful model response is not a completed business task.”</blockquote>
+      <blockquote>“Most AI writes from a prompt. Molly starts from how the market behaves.”</blockquote>
     </section>
 
     <section class="incident" id="incident" aria-labelledby="incident-title">
       <div class="incident-heading">
-        <p class="section-number">04 / THE INCIDENT</p>
+        <p class="section-number">RELIABILITY PROOF</p>
         <h2 id="incident-title">The image looked finished.<br>The product was missing.</h2>
         <p>The immediate defect was visual. The system defect was semantic: an intermediate reference had been allowed to masquerade as a final deliverable.</p>
       </div>
@@ -154,9 +163,9 @@
 
     <section class="system" id="system" aria-labelledby="system-title">
       <div class="system-intro">
-        <p class="section-number">05 / THE SYSTEM</p>
-        <h2 id="system-title">One bounded reliability loop.</h2>
-        <p>The public view stays intentionally black-box. It shows the control logic that makes the agent accountable without releasing the proprietary runtime.</p>
+        <p class="section-number">PRODUCTION CONTROL</p>
+        <h2 id="system-title">The decision can travel safely into production.</h2>
+        <p>The market loop is useful only when its evidence, generation, recovery, publishing, and readback remain accountable. The public view exposes the control logic, not the proprietary runtime.</p>
       </div>
       <ol class="loop" aria-label="Agent reliability loop">
         <li><span>01</span><b>Observe</b><small>Collect evidence</small></li>
@@ -172,12 +181,12 @@
         <article><span class="principle-id">C</span><h3>Job isolation</h3><p>Each run receives an isolated evidence bundle to reduce cross-task contamination.</p></article>
         <article><span class="principle-id">D</span><h3>Scoped recovery</h3><p>A failed node is retried without silently accepting degradation or restarting everything.</p></article>
         <article><span class="principle-id">E</span><h3>Human authority</h3><p>The agent can recommend and execute, but it cannot manufacture approval.</p></article>
-        <article><span class="principle-id">F</span><h3>Operational readback</h3><p>Completion depends on verified downstream state—not on model confidence.</p></article>
+        <article><span class="principle-id">F</span><h3>Operational readback</h3><p>Completion depends on verified downstream state, with evidence from the real destination.</p></article>
       </div>
     </section>
 
     <section class="builder" aria-labelledby="builder-title">
-      <p class="section-number">06 / THE BUILDER</p>
+      <p class="section-number">THE BUILDER</p>
       <h2 id="builder-title">From messy workflow to operating product.</h2>
       <p>I translate frontline ambiguity into product boundaries, state transitions, evaluation criteria, recovery paths, and interfaces that people can actually run.</p>
       <div class="builder-track">
@@ -188,7 +197,7 @@
 
     <section class="boundary" id="boundary" aria-labelledby="boundary-title">
       <div>
-        <p class="section-number">07 / THE BOUNDARY</p>
+        <p class="section-number">THE BOUNDARY</p>
         <h2 id="boundary-title">Transparent decisions.<br>Private implementation.</h2>
       </div>
       <div class="boundary-copy">
@@ -213,8 +222,8 @@
 
   <footer>
     <span>© 2026 Honglin Liao</span>
-    <span>Closed-source production case study</span>
-    <span>Hong Kong / APAC</span>
+    <span>Behavior-led media case study</span>
+    <span>Private production implementation</span>
   </footer>
 </body>
 </html>
