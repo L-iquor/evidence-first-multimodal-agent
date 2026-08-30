@@ -8,17 +8,17 @@
 
 [View the visual case study](https://l-iquor.github.io/evidence-first-multimodal-agent/) · [Contact Honglin](mailto:farewell13710@gmail.com) · [LinkedIn](https://www.linkedin.com/in/honglin-liao-343066251/)
 
-## 50-second market-behavior walkthrough
+## 60-second behavior-led media pitch film
 
 [![Watch Molly turn market behavior into media action](assets/molly-market-behavior-poster.png)](https://l-iquor.github.io/evidence-first-multimodal-agent/)
 
-The narrated walkthrough runs once on page load (muted by default to satisfy browser autoplay rules) and remains understandable without audio. It follows this observable sequence:
+The narrated film runs once on page load and remains understandable through captions. It follows this observable sequence:
 
 ```text
-BEHAVIOR → HYPOTHESIS → LIVE VALIDATION → CONTENT DECISION → MEDIA ACTION → OUTCOME LEARNING
+BEHAVIOR → HYPOTHESIS → LIVE VALIDATION → HUMAN JOB → MEDIA EXECUTION → OUTCOME LEARNING
 ```
 
-The walkthrough shows one sanitized, successful sensing-and-decision run: 120 fresh source notes become five supported opportunities, one interpreted user job, and one media action. It then shows how the production system returns reading, saving, store, purchase, and refund outcomes to the next cycle. The public run proves the sensing-and-decision portion; the outcome sequence describes the implemented operating loop. Private prompts, credentials, source code, and production data remain excluded. [Open the captioned MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-market-behavior-demo.mp4?v=20260830-loop).
+The film shows one sanitized, successful sensing-and-decision run: 120 live source notes become five supported opportunities and one human job—let the evening begin. The same evidence line then carries that decision through production, verification, publishing, and outcome readback. The public run proves the sensing-and-decision portion; the outcome sequence describes the implemented operating loop. Private prompts, credentials, source code, and production data remain excluded. [Open the captioned MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-market-behavior-demo.mp4?v=20260830-pitch).
 
 ### What the representative run demonstrates
 
