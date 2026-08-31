@@ -8,17 +8,17 @@
 
 [View the visual case study](https://l-iquor.github.io/evidence-first-multimodal-agent/) · [Contact Honglin](mailto:farewell13710@gmail.com) · [LinkedIn](https://www.linkedin.com/in/honglin-liao-343066251/)
 
-## 60-second behavior-led media pitch film
+## 78-second AI product film
 
 [![Watch Molly turn market behavior into media action](assets/molly-market-behavior-poster.png)](https://l-iquor.github.io/evidence-first-multimodal-agent/)
 
-The narrated film runs once on page load and remains understandable through captions. It follows this observable sequence:
+The narrated film runs once on page load and uses open captions throughout. It explains the product principle first, then follows one real Molly case through this observable sequence:
 
 ```text
 BEHAVIOR → HYPOTHESIS → LIVE VALIDATION → HUMAN JOB → MEDIA EXECUTION → OUTCOME LEARNING
 ```
 
-The film shows one sanitized, successful sensing-and-decision run: 120 live source notes become five supported opportunities and one human job—let the evening begin. The same evidence line then carries that decision through production, verification, publishing, and outcome readback. The public run proves the sensing-and-decision portion; the outcome sequence describes the implemented operating loop. Private prompts, credentials, source code, and production data remain excluded. [Open the captioned MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-market-behavior-demo.mp4?v=20260830-pitch).
+The real case combines a live visual pattern with an exact same-page text signal, converts them into one evening-scene direction, builds and verifies the artifact, routes it to the intended account, publishes it, and returns the public link to the operating record. The release is publicly verifiable: [open today's post](https://www.douyin.com/note/7680012699325025551). Private prompts, credentials, source code, and production data remain excluded. [Open the captioned MP4 directly](https://l-iquor.github.io/evidence-first-multimodal-agent/assets/molly-market-behavior-demo.mp4?v=20260831-real-run).
 
 ### What the representative run demonstrates
 
